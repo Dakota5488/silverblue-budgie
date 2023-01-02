@@ -1,6 +1,6 @@
 ARG FEDORA_MAJOR_VERSION=37
 
-FROM ghcr.io/cgwalters/fedora-silverblue:37
+FROM ghcr.io/ublue-os/base:latest
 
 # Package lists are based off of https://pagure.io/fork/joshstrobl/fedora-comps/c/3f2061cb8b124f6aa4a8c9b600de4642f3806958
 RUN rpm-ostree uninstall gnome-control-center gnome-control-center-filesystem gnome-tweaks gnome-shell mutter gdm gnome-shell-extension-common gnome-session gnome-session-xsession gnome-classic-session gnome-session-wayland-session gnome-initial-setup gnome-shell-extension-background-logo gnome-shell-extension-window-list gnome-shell-extension-places-menu gnome-browser-connector gnome-shell-extension-launch-new-instance gnome-shell-extension-apps-menu
